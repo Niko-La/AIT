@@ -1,8 +1,12 @@
-# 🚀 Nikola A.I.T Team: Revolutionizing Software Development
+# 🚀 Nikola A.I.T Team: Software Development as a Simple Service
 
 ## 🎯 Our Mission
 
-At Nikola A.I.T Team, we're not just another software development company. We're your strategic partner in the digital age, bringing the power of AI and cutting-edge technology to businesses of all sizes.
+At Nikola A.I.T Team, we're not just another software development company. We're your I.T partner , bringing the power of AI and cutting-edge technology to businesses of all sizes.
+
+We reduce costs, improve revenue, track process, build new tools
+
+### Up to 2x your profits by spending up to 10% more. ###
 
 > "Imagine having a world-class IT department at your fingertips, without the overhead. That's what we deliver."
 
