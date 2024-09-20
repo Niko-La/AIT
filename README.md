@@ -1,5 +1,4 @@
-# 🚀 Nikola A.I.T Team
-## Your Artificial Intelligent I.T. Partner
+## 🚀 Nikola A.I.T Team  Your Artificial Intelligent I.T. Partner
 
 > "Imagine having a world-class IT department at your fingertips, without the overhead. That's what we deliver."
 
@@ -237,3 +236,5 @@ At Nikola A.I.T Team, we are not just a software development company; we are you
 ---
 
 *Nikola A.I.T Team: Empowering Your Business with Intelligent Technology Solutions*
+
+[A NIKO.LA PROJECT](https://linktr.ee/nikolalabs)
