@@ -10,6 +10,9 @@ We reduce costs, improve revenue, track process, build new tools
 
 > "Imagine having a world-class IT department at your fingertips, without the overhead. That's what we deliver."
 
+## 🔬Focus area 
+| 🏥 Medical Clinic | ⚖️ Law Firms | 🛍️ Retail / Food | 🤝 Sales / Customer Service |
+|-------------------|--------------|-------------------|---------------------------|
 ## 🌟 What Sets Us Apart
 
 1. **AI-First Approach**: Every solution we develop leverages the latest in artificial intelligence.
