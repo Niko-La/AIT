@@ -1,6 +1,6 @@
-# 🚀 Nikola A.I.T Team: Software Development as a Simple Service
+# 🚀 Nikola A.I.T Team: Software Development as a Service
 
-## 🎯 Our Mission
+## 🎯 What we do
 
 At Nikola A.I.T Team, we're not just another software development company. We're your I.T partner , bringing the power of AI and cutting-edge technology to businesses of all sizes.
 
@@ -35,10 +35,10 @@ Choosing Nikola A.I.T Team isn't just a service decision—it's a strategic inve
 
 | Tier | Daily Rate | Monthly | Annual (10 months) | Meetings |
 |------|------------|---------|---------------------|----------|
-| 👨‍💻 Jr IT | $10 | $300 | $3,000 | 30min bi-weekly |
-| 👩‍💼 Sr IT | $24 | $720 | $7,200 | 30min weekly |
-| 🤖 AI Team | $100 | $3,000 | $30,000 | 2x 30min weekly |
-| 🏢 Enterprise | $167+ | $5,000+ | $50,000+ | Custom schedule |
+| 👨‍💻 Jr IT | $20 | $600 | $6,000 | 30min bi-weekly |
+| 👩‍💼 Sr IT | $50 | $1500 | $15,000 | 30min weekly |
+| 🤖 AI Team | $120 | $3,600 | $30,000 | 2x 30min weekly |
+| 🏢 Enterprise | $199+ | $6,000+ | $60,000+ | Custom schedule |
 
 > 💡 **Pro Tip**: Our Enterprise plan offers the equivalent of a full IT department at just 7% of the traditional cost!
 
@@ -47,7 +47,7 @@ Choosing Nikola A.I.T Team isn't just a service decision—it's a strategic inve
 | Solution | Annual Cost |
 |----------|-------------|
 | Traditional In-House Team | $750,000+ |
-| Nikola A.I.T Enterprise Plan | $50,000+ |
+| Nikola A.I.T Enterprise Plan | $60,000+ |
 
 **Potential annual savings: Up to $700,000**
 
@@ -61,7 +61,6 @@ Choosing Nikola A.I.T Team isn't just a service decision—it's a strategic inve
 | UI/UX Designer | $90,000 - $130,000 |
 | Project Manager | $100,000 - $150,000 |
 
-
 ## 🖥️ On-Premise AI Hardware
 
 For businesses requiring enhanced security and performance, we offer on-premise AI hardware solutions starting at just $2.5 USD per hour.
@@ -71,6 +70,33 @@ For businesses requiring enhanced security and performance, we offer on-premise 
 - ⚡ Ultra-low latency
 - 🛠️ Custom configurations
 - 🔄 Seamless integration
+
+### Specifications:
+- **CPU:** 48-core high-performance processor
+- **GPU:** Integrated 128-core GPU
+- **RAM:** Up to 384GB unified memory
+- **Storage:** Up to 8TB SSD
+- **Neural Engine:** 64-core dedicated AI accelerator
+- **Connectivity:** Thunderbolt 4, 10Gb Ethernet
+
+### Key Advantages:
+1. **Privacy-First**: Run AI models locally, keeping sensitive data on-premises.
+2. **Versatility**: Suitable for various AI tasks, from natural language processing to computer vision.
+3. **Energy Efficiency**: Optimized performance-per-watt for eco-friendly AI computing.
+4. **Scalability**: Easily cluster multiple units for increased processing power.
+5. **Software Ecosystem**: Compatible with popular AI frameworks and development tools.
+6. **Local LLM Capability**: Powerful enough to run large open-source language models locally.
+
+### Use Cases
+
+| Use Cases                                          |
+|----------------------------------------------------|
+| Run 405B+ Open Large Language Model (LLM) Inference |
+| Deploy Open-Source LLMs Locally                    |
+| Ensure On-Premise Data Security                     |
+| Real-Time Image and Video Processing                |
+| Self Hosting Applications                       |
+| Predictive Analytics for Business Intelligence      |
 
 ## 🚀 The Nikola A.I.T Advantage
 
@@ -90,13 +116,9 @@ We value close relationships and streamlined processes. Our Friends and Family p
 
 ## 📈 Success Stories
 
-> "Nikola A.I.T Team transformed our patient management system, reducing wait times by 35% and increasing patient satisfaction scores by 28%." 
-> 
-> *— Dr. Emily Chen, CEO of HealthFirst Clinics*
-
-> "Their AI-driven analytics platform helped us identify $2.1M in potential savings within the first quarter of implementation."
+> "The Nikola A.I.T Team transformed our university lab by developing an online platform to track students' lab work. This innovation has led to improved engagement and easier monitoring of student progress throughout the year. I particularly appreciated the visualization dashboard, which helped students stay informed about upcoming tasks and fostered friendly competition among them."
 >
-> *— Michael Ross, CFO of LegalEase Solutions*
+> — Dr. Bala, BMS Lab, ECE University of Windsor
 
 ## 🤝 Next Steps
 
@@ -105,6 +127,12 @@ We value close relationships and streamlined processes. Our Friends and Family p
 3. **Seamless Onboarding**: Quick integration with your existing systems and processes.
 
 **Ready to transform your business? Schedule your free consultation today!**
+
+---
+
+## About
+
+At Nikola A.I.T Team, we are not just a software development company; we are your strategic IT partner. Our mission is to empower businesses of all sizes by leveraging the transformative power of artificial intelligence and cutting-edge technology. Together, we drive innovation, enhance efficiency, and unlock new opportunities for growth.
 
 ---
 
