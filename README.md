@@ -1,5 +1,7 @@
 ## 🚀 Nikola A.I.T Team  Your Artificial Intelligent I.T. Partner
 > "Imagine having a world-class IT department at your fingertips, without the overhead. That's what we deliver."
+
+{% include on-premise-ai-server.html %}
 ## 🎯 Our Mission
 
 We're not just another software development company or IT provider. We're your dedicated AI-powered IT team, comprised of hardcore engineers, elite developers, and cutting-edge researchers.
