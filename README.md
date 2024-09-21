@@ -25,7 +25,6 @@ We're not just another software development company or IT provider. We're your d
 
 [⚠️ Schedule a call with your AIT Team Lead⚠️](https://calendly.com/saas-me-up/30min)
 
-{% include on-premise-ai-server.html %}
 ### 
 🚀 Our Promise
 
