@@ -1,7 +1,5 @@
 ## 🚀 Nikola A.I.T Team  Your Artificial Intelligent I.T. Partner
-
 > "Imagine having a world-class IT department at your fingertips, without the overhead. That's what we deliver."
-
 ## 🎯 Our Mission
 
 We're not just another software development company or IT provider. We're your dedicated AI-powered IT team, comprised of hardcore engineers, elite developers, and cutting-edge researchers.
@@ -14,7 +12,21 @@ We're not just another software development company or IT provider. We're your d
 - 💰 Cost Reduction Strategies
 - 📈 Revenue Enhancement
 
-### 🚀 Our Promise
+## 📈 Success Stories
+
+> "Enerva's A.I.T. Team created an interactive dashboard that enhanced our consulting reports and presentations. The interactive map allowed us to better target clients for new business, while custom AI tools saved us **30%** in time and improved employee productivity by **50%**. Their seamless integration was truly magical."
+>
+> — Alex Johnson, Data Science Lead, Enerva
+
+### Key Metrics Breakdown:
+- **Time Savings:** 30%
+- **Employee Productivity Improvement:** 50%
+
+[⚠️ Schedule a call with your AIT Team Lead⚠️](https://calendly.com/saas-me-up/30min)
+
+{% include on-premise-ai-server.html %}
+### 
+🚀 Our Promise
 
 **Up to 2x your profits by investing just 10% more in smart IT solutions.**
 
@@ -39,19 +51,13 @@ Revolutionizing business with:
 
 Don't see your industry? No worries! Our versatile AI adapts to any business domain.
 
-[🔘 Explore Custom AI Solutions for Your Industry]
-
-Don't see your industry listed? We specialize in tailoring our AI-powered IT solutions to any business sector. Let's discuss how we can revolutionize your specific industry!
-
 [🔘 Explore Custom Solutions]
 
 ## 📞 Ready to Supercharge Your Business?
 
 Take the first step towards a more efficient, profitable future. Schedule a free consultation with our AI experts today!
 
-tation]
-
-[🔘 Book Your Free Consultation](https://calendly.com/saas-me-up/30min)
+[⚠️ What are your paint points? Talk to An AIT System Architect⚠️](https://calendly.com/saas-me-up/30min)
 
 ## 💼 Our AI Services
 
@@ -76,8 +82,6 @@ tation]
 3. **Flexible Engagement**: From microSaaS to full-scale enterprise solutions, we adapt to your needs.
 4. **Continuous Innovation**: Benefit from advancements across our entire client base.
 5. **Cost-Effective Solutions**: Achieve more with your technology budget.
-
-\
 
 ## 💰 Investment & ROI
 
@@ -182,7 +186,7 @@ We value close relationships and streamlined processes. Our Friends and Family p
 
 **Ready to transform your business? Schedule your free consultation today!**
 
-[🔘 Book Your Free Consultation](https://calendly.com/saas-me-up/30min)
+[⚠️ Book a free consultation now!!⚠️](https://calendly.com/saas-me-up/30min)
 
 ## 🌟 Cutting-Edge Tech Solutions
 
@@ -217,6 +221,7 @@ Every industry has unique challenges and opportunities. Let's explore how our mu
 [🏭] Manufacturing
 [🚚] Logistics
 [📊] Finance
+[🍕] Food
 [🛍️] Retail
 [🍽️] Hospitality
 [🎓] Education
@@ -225,7 +230,19 @@ Every industry has unique challenges and opportunities. Let's explore how our mu
 
 Don't see your industry? No problem! Our versatile AI solutions can be adapted to any business domain.
 
-[🔘 Book Your Free Consultation](https://calendly.com/saas-me-up/30min)
+[🤔 If you made it this far what you waiting for?? 🧐](https://calendly.com/saas-me-up/30min)
+
+## Contact Us
+
+Ready to be part of the future of urban mobility? Contact us to explore partnership opportunities:
+
+- Email: AIT@niko.la
+- Website: www.niko.la
+  
+Let's revolutionize urban transportation together!
+
+## Next Steps
+📅 Schedule a 30-minute video call to explore synergies and align our technology with your strategic goals.
 
 ---
 

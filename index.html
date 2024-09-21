@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikola A.I.T Team</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --text-color: #333;
+            --bg-color: #f5f5f5;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 1.5em;
+        }
+        h3 {
+            font-size: 1.3em;
+        }
+        p, ul, ol {
+            margin-bottom: 1em;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .quote {
+            font-style: italic;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #3a7bc8;
+            text-decoration: none;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .night-mode-toggle {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        .collapsible {
+            background-color: var(--primary-color);
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+        .active, .collapsible:hover {
+            background-color: #3a7bc8;
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: var(--card-bg);
+        }
+        body.night-mode {
+            --text-color: #f5f5f5;
+            --bg-color: #333;
+            --card-bg: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#success-stories">Success Stories</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="night-mode-toggle" onclick="toggleNightMode()">🌙</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>🚀 Nikola A.I.T Team  Your Artificial Intelligent I.T. Partner</h1>
+        <p class="quote">"Imagine having a world-class IT department at your fingertips, without the overhead. That's what we deliver."</p>
+
+        <div id="mission" class="card">
+            <h2>🎯 Our Mission</h2>
+            <p>We're not just another software development company or IT provider. We're your dedicated AI-powered IT team, comprised of hardcore engineers, elite developers, and cutting-edge researchers.</p>
+
+            <h3>💡 What Sets Us Apart</h3>
+            <ul>
+                <li>🤖 AI-Driven Solutions</li>
+                <li>💻 Custom Software Development</li>
+                <li>📊 Data-Driven Process Optimization</li>
+                <li>💰 Cost Reduction Strategies</li>
+                <li>📈 Revenue Enhancement</li>
+            </ul>
+        </div>
+
+        <div id="success-stories" class="card">
+            <h2>📈 Success Stories</h2>
+            <p class="quote">"Enerva's A.I.T. Team created an interactive dashboard that enhanced our consulting reports and presentations. The interactive map allowed us to better target clients for new business, while custom AI tools saved us <strong>30%</strong> in time and improved employee productivity by <strong>50%</strong>. Their seamless integration was truly magical."</p>
+            <p>— Alex Johnson, Data Science Lead, Enerva</p>
+
+            <h3>Key Metrics Breakdown:</h3>
+            <ul>
+                <li><strong>Time Savings:</strong> 30%</li>
+                <li><strong>Employee Productivity Improvement:</strong> 50%</li>
+            </ul>
+
+            <a href="https://calendly.com/saas-me-up/30min" class="cta-button">⚠️ Schedule a call with your AIT Team Lead ⚠️</a>
+        </div>
+
+        <div class="card">
+            <h2>🚀 Our Promise</h2>
+            <p><strong>Up to 2x your profits by investing just 10% more in smart IT solutions.</strong></p>
+        </div>
+
+        <div id="industries" class="card">
+            <h2>🔬 Industries We Serve</h2>
+            <p>🏥 Healthcare | ⚖️ Legal | 🏭 Manufacturing | 🚚 Logistics | 📊 Finance | 🛍️ Retail | 🍽️ Hospitality | 🎓 Education</p>
+        </div>
+
+        <div id="solutions" class="card">
+            <h2>🌟 Comprehensive Tech Solutions</h2>
+            <p>💻 SOFTWARE | 🔄 DEVOPS | 🖥️ HARDWARE | 🛡️ IT | 🤖 AI</p>
+
+            <h3>🧠 Multi-Modal AI Agents</h3>
+            <p>Revolutionizing business with:</p>
+            <ul>
+                <li>📝 Text Analysis</li>
+                <li>👁️ Computer Vision</li>
+                <li>🎤 Speech Processing</li>
+                <li>⏱️ Real-Time Decisions</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">🖥️ On-Premise AI SERVER</button>
+        <div class="content">
+            <p>For businesses requiring enhanced security and performance, we offer on-premise AI inferenced server stack with custom hardware engine starting at just $2.5 USD per hour.</p>
+
+            <h3>Benefits include:</h3>
+            <ul>
+                <li>🔒 Heightened data security</li>
+                <li>🗝️ On Premise Private Data</li>
+                <li>⚡ Ultra-low latency</li>
+                <li>🛠️ Custom configurations</li>
+                <li>🔄 Seamless integration</li>
+            </ul>
+
+            <h3>Specifications:</h3>
+            <ul>
+                <li><strong>CPU:</strong> 48-core high-performance processor</li>
+                <li><strong>GPU:</strong> Integrated 128-core GPU</li>
+                <li><strong>RAM:</strong> Up to 384GB unified memory</li>
+                <li><strong>Storage:</strong> Up to 8TB SSD</li>
+                <li><strong>Neural Engine:</strong> 64-core dedicated AI accelerator</li>
+                <li><strong>Connectivity:</strong> Thunderbolt 4, 10Gb Ethernet</li>
+            </ul>
+
+            <h3>Key Advantages:</h3>
+            <ol>
+                <li><strong>Privacy-First:</strong> Run AI models locally, keeping sensitive data on-premises.</li>
+                <li><strong>Versatility:</strong> Suitable for various AI tasks, from natural language processing to computer vision.</li>
+                <li><strong>Energy Efficiency:</strong> Optimized performance-per-watt for eco-friendly AI computing.</li>
+                <li><strong>Scalability:</strong> Easily cluster multiple units for increased processing power.</li>
+                <li><strong>Software Ecosystem:</strong> Compatible with popular AI frameworks and development tools.</li>
+                <li><strong>Local LLM Capability:</strong> Powerful enough to run large open-source language models locally.</li>
+            </ol>
+
+            <h3>Use Cases</h3>
+            <ul>
+                <li>Run 405B+ ALL OS Language Model (LLM) Inferences</li>
+                <li>Deploy own FINE-TUNED Custom LLMs</li>
+                <li>Ensure On-Premise Data Security</li>
+                <li>Real-Time Multi Modal Vision Audio Text Models & Agents</li>
+                <li>Self Hosting Applications</li>
+                <li>Predictive Analytics for Business Intelligence</li>
+            </ul>
+        </div>
+
+        <div id="pricing" class="card">
+            <h2>💰 Investment & ROI</h2>
+            <p>Choosing Nikola A.I.T Team isn't just a service decision—it's a strategic investment in your company's future.</p>
+
+            <h3>🏆 Nikola A.I.T Subscription Tiers (USD)</h3>
+            <table>
+                <tr>
+                    <th>Tier</th>
+                    <th>Daily Rate</th>
+                    <th>Monthly</th>
+                    <th>Annual (2 free)</th>
+                    <th>Meetings</th>
+                </tr>
+                <tr>
+                    <td>👨‍💻 Jr IT</td>
+                    <td>$24</td>
+                    <td>$720</td>
+                    <td>$7,200</td>
+                    <td>30min bi-weekly</td>
+                </tr>
+                <tr>
+                    <td>👩‍💼 Sr IT</td>
+                    <td>$50</td>
+                    <td>$1500</td>
+                    <td>$15,000</td>
+                    <td>30min weekly</td>
+                </tr>
+                <tr>
+                    <td>🤖 AI Team</td>
+                    <td>$120</td>
+                    <td>$3,600</td>
+                    <td>$30,000</td>
+                    <td>2x 30min weekly</td>
+                </tr>
+                <tr>
+                    <td>🏢 Enterprise</td>
+                    <td>$199+</td>
+                    <td>$6,000+</td>
+                    <td>$60,000+</td>
+                    <td>Custom schedule</td>
+                </tr>
+            </table>
+
+            <p class="quote">💡 <strong>Pro Tip:</strong> Our Enterprise plan offers the equivalent of a full IT department at just 7% of the traditional cost!</p>
+
+            <h3>📊 Cost Comparison</h3>
+            <table>
+                <tr>
+                    <th>Solution</th>
+                    <th>Annual Cost</th>
+                </tr>
+                <tr>
+                    <td>Traditional In-House Team</td>
+                    <td>$750,000+</td>
+                </tr>
+                <tr>
+                    <td>Nikola A.I.T Enterprise Plan</td>
+                    <td>$60,000+</td>
+                </tr>
+            </table>
+            <p><strong>Potential annual savings: Up to $700,000</strong></p>
+
+            <h3>💼 Typical In-House IT Team Breakdown</h3>
+            <table>
+                <tr>
+                    <th>Role</th>
+                    <th>Annual Salary Range</th>
+                </tr>
+                <tr>
+                    <td>Senior Software Engineer</td>
+                    <td>$150,000 - $200,000</td>
+                </tr>
+                <tr>
+                    <td>DevOps Engineer</td>
+                    <td>$120,000 - $160,000</td>
+                </tr>
+                <tr>
+                    <td>Data Scientist</td>
+                    <td>$130,000 - $180,000</td>
+                </tr>
+                <tr>
+                    <td>UI/UX Designer</td>
+                    <td>$90,000 - $130,000</td>
+                </tr>
+                <tr>
+                    <td>Project/ Product Manager</td>
+                    <td>$100,000 - $150,000</td>
+                </tr>
+                <tr>
+                    <td>Other Members</td>
+                    <td>$ $$$$,$$$</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <!-- (Previous head content remains the same) -->
+                </head>
+                <body>
+                    <!-- (Previous body content remains the same) -->
+                
+                        <div class="card">
+                            <h2>🚀 The Nikola A.I.T Advantage</h2>
+                            <ul>
+                                <li>💰 <strong>Cost Savings:</strong> Save up to 93% compared to traditional IT departments.</li>
+                                <li>🧠 <strong>AI Expertise:</strong> Access cutting-edge AI solutions without the learning curve.</li>
+                                <li>📈 <strong>Scalability:</strong> Grow your IT capabilities in sync with your business needs.</li>
+                                <li>🔄 <strong>Innovation Sharing:</strong> Benefit from advancements across our entire client base.</li>
+                                <li>🚀 <strong>Rapid Development:</strong> Bring ideas to market faster with our agile approach.</li>
+                            </ul>
+                        </div>
+                
+                        <div class="card">
+                            <h2>👨‍👩‍👧‍👦 Friends and Family Plan</h2>
+                            <p>We value close relationships and streamlined processes. Our Friends and Family plan offers:</p>
+                            <ol>
+                                <li><strong>Direct Collaboration:</strong> Work directly with our holding company, bypassing unnecessary bureaucracy.</li>
+                                <li><strong>Affordable Commitment:</strong> Just $99/month minimum ensures you have dedicated support.</li>
+                                <li><strong>Branding Opportunity:</strong> Promote having your own IT team, enhancing your company's tech credibility.</li>
+                            </ol>
+                        </div>
+                
+                        <div class="card">
+                            <h2>📈 Success Stories</h2>
+                            <p class="quote">"The Nikola A.I.T Team transformed our university lab by developing an online platform to track students' lab work. This innovation has led to improved engagement and easier monitoring of student progress throughout the year. I particularly appreciated the visualization dashboard, which helped students stay informed about upcoming tasks and fostered friendly competition among them."</p>
+                            <p>— Dr. Bala, BMS Lab, ECE University of Windsor</p>
+                        </div>
+                
+                        <div class="card">
+                            <h2>🤝 Next Steps</h2>
+                            <ol>
+                                <li><strong>Book a Consultation:</strong> Let's discuss your unique challenges and opportunities.</li>
+                                <li><strong>Custom Proposal:</strong> We'll craft a tailored solution designed for your success.</li>
+                                <li><strong>Seamless Onboarding:</strong> Quick integration with your existing systems and processes.</li>
+                            </ol>
+                            <p><strong>Ready to transform your business? Schedule your free consultation today!</strong></p>
+                            <a href="https://calendly.com/saas-me-up/30min" class="cta-button">⚠️ Book a free consultation now!! ⚠️</a>
+                        </div>
+                
+                        <div class="card">
+                            <h2>🔍 Discover Your Industry's AI Potential</h2>
+                            <p>Every industry has unique challenges and opportunities. Let's explore how our multi-modal AI agents can transform your specific sector:</p>
+                            <p>[🏥] Healthcare | [⚖️] Legal | [🏭] Manufacturing | [🚚] Logistics | [📊] Finance | [🍕] Food | [🛍️] Retail | [🍽️] Hospitality | [🎓] Education | [🏗️] Construction | [🌱] Agriculture</p>
+                            <p>Don't see your industry? No problem! Our versatile AI solutions can be adapted to any business domain.</p>
+                            <a href="https://calendly.com/saas-me-up/30min" class="cta-button">🤔 If you made it this far what you waiting for?? 🧐</a>
+                        </div>
+                
+                        <div id="contact" class="card">
+                            <h2>Contact Us</h2>
+                            <p>Ready to be part of the future of urban mobility? Contact us to explore partnership opportunities:</p>
+                            <ul>
+                                <li>Email: AIT@niko.la</li>
+                                <li>Website: www.niko.la</li>
+                            </ul>
+                            <p>Let's revolutionize urban transportation together!</p>
+                        </div>
+                
+                        <div class="card">
+                            <h2>Next Steps</h2>
+                            <p>📅 Schedule a 30-minute video call to explore synergies and align our technology with your strategic goals.</p>
+                        </div>
+                
+                        <div class="card">
+                            <h2>About</h2>
+                            <p>At Nikola A.I.T Team, we are not just a software development company; we are your strategic IT partner. Our mission is to empower businesses of all sizes by leveraging the transformative power of artificial intelligence and cutting-edge technology. Together, we drive innovation, enhance efficiency, and unlock new opportunities for growth.</p>
+                        </div>
+                
+                        <footer>
+                            <p><em>Nikola A.I.T Team: Empowering Your Business with Intelligent Technology Solutions</em></p>
+                            <p><a href="https://linktr.ee/nikolalabs">A NIKO.LA PROJECT</a></p>
+                        </footer>
+                    </div>
+                
+                    <script>
+                        function toggleNightMode() {
+                            document.body.classList.toggle('night-mode');
+                            const nightModeToggle = document.querySelector('.night-mode-toggle');
+                            nightModeToggle.textContent = document.body.classList.contains('night-mode') ? '☀️' : '🌙';
+                        }
+                
+                        var coll = document.getElementsByClassName("collapsible");
+                        var i;
+                
+                        for (i = 0; i < coll.length; i++) {
+                            coll[i].addEventListener("click", function() {
+                                this.classList.toggle("active");
+                                var content = this.nextElementSibling;
+                                if (content.style.display === "block") {
+                                    content.style.display = "none";
+                                } else {
+                                    content.style.display = "block";
+                                }
+                            });
+                        }
+                    </script>
+                </body>
+                </html>

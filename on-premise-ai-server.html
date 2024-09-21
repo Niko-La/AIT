@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On-Premise AI Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .collapsible {
+            background-color: #f1f1f1;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>🖥️ On-Premise AI Server</h1>
+    <p>For businesses requiring enhanced security and performance, we offer an on-premise AI inference server stack with custom hardware engine starting at just $2.5 USD per hour.</p>
+
+    <button class="collapsible">Benefits</button>
+    <div class="content">
+        <ul>
+            <li>🔒 Heightened data security</li>
+            <li>🗝️ On-Premise Private Data</li>
+            <li>⚡ Ultra-low latency</li>
+            <li>🛠️ Custom configurations</li>
+            <li>🔄 Seamless integration</li>
+        </ul>
+    </div>
+
+    <button class="collapsible">Specifications</button>
+    <div class="content">
+        <ul>
+            <li><strong>CPU:</strong> 48-core high-performance processor</li>
+            <li><strong>GPU:</strong> Integrated 128-core GPU</li>
+            <li><strong>RAM:</strong> Up to 384GB unified memory</li>
+            <li><strong>Storage:</strong> Up to 8TB SSD</li>
+            <li><strong>Neural Engine:</strong> 64-core dedicated AI accelerator</li>
+            <li><strong>Connectivity:</strong> Thunderbolt 4, 10Gb Ethernet</li>
+        </ul>
+    </div>
+
+    <button class="collapsible">Key Advantages</button>
+    <div class="content">
+        <ol>
+            <li><strong>Privacy-First:</strong> Run AI models locally, keeping sensitive data on-premises.</li>
+            <li><strong>Versatility:</strong> Suitable for various AI tasks, from natural language processing to computer vision.</li>
+            <li><strong>Energy Efficiency:</strong> Optimized performance-per-watt for eco-friendly AI computing.</li>
+            <li><strong>Scalability:</strong> Easily cluster multiple units for increased processing power.</li>
+            <li><strong>Software Ecosystem:</strong> Compatible with popular AI frameworks and development tools.</li>
+            <li><strong>Local LLM Capability:</strong> Powerful enough to run large open-source language models locally.</li>
+        </ol>
+    </div>
+
+    <button class="collapsible">Use Cases</button>
+    <div class="content">
+        <table>
+            <tr>
+                <th>Use Cases</th>
+            </tr>
+            <tr>
+                <td>Run 405B+ ALL OS Language Model (LLM) Inferences</td>
+            </tr>
+            <tr>
+                <td>Deploy own FINE-TUNED Custom LLMs</td>
+            </tr>
+            <tr>
+                <td>Ensure On-Premise Data Security</td>
+            </tr>
+            <tr>
+                <td>Real-Time Multi-Modal Vision Audio Text Models & Agents</td>
+            </tr>
+            <tr>
+                <td>Self-Hosting Applications</td>
+            </tr>
+            <tr>
+                <td>Predictive Analytics for Business Intelligence</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
