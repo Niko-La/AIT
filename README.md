@@ -25,10 +25,7 @@ We're not just another software development company or IT provider. We're your d
 
 [⚠️ Schedule a call with your AIT Team Lead⚠️](https://calendly.com/saas-me-up/30min)
 
-### 
-🚀 Our Promise
-
-**Up to 2x your profits by investing just 10% more in smart IT solutions.**
+### 🚀 **Up to 2x your profits by investing just 10% more in smart IT solutions.**
 
 ## 🔬 Industries We Serve
 
