@@ -1,9 +1,9 @@
 ## 🚀 Nikola A.I.T Team  Your Artificial Intelligent I.T. Partner
-> "Imagine having a world-class IT department at your fingertips, without the overhead. That's what we deliver."
+> "Imagine your own elite IT department at your fingertips, without the overhead. That's what we deliver."
 
 ## 🎯 Our Mission
 
-We're not just another software development company or IT provider. We're your dedicated AI-powered IT team, comprised of hardcore engineers, elite developers, and cutting-edge researchers.
+We're not just another software development company or IT provider. We're your dedicated AI-powered IT team, comprised of hardcore engineers, lean developers, and cutting-edge ML researchers.
 
 ### 💡 What Sets Us Apart
 
@@ -19,11 +19,9 @@ We're not just another software development company or IT provider. We're your d
 >
 > — Alex Johnson, Data Science Lead, Enerva
 
-### Key Metrics Breakdown:
-- **Time Savings:** 30%
-- **Employee Productivity Improvement:** 50%
+**Key Metrics:** **Time Savings:** 30% | **Productivity Improvement:** 50%
 
-[⚠️ Schedule a call with your AIT Team Lead⚠️](https://calendly.com/saas-me-up/30min)
+[Schedule a call with your AIT Team Lead](https://calendly.com/saas-me-up/30min)
 
 ### 🚀 **Up to 2x your profits by investing just 10% more in smart IT solutions.**
 
@@ -44,20 +42,15 @@ Revolutionizing business with:
 - 🎤 Speech Processing
 - ⏱️ Real-Time Decisions
 
-## 🔍 Discover Your Industry's AI Potential
+## 🔍Don't see your industry? No worries! Our versatile AI adapts to any business domain.
 
-Don't see your industry? No worries! Our versatile AI adapts to any business domain.
-
-[🔘 Explore Custom Solutions]
-
-## 📞 Ready to Supercharge Your Business?
 
 Take the first step towards a more efficient, profitable future. Schedule a free consultation with our AI experts today!
 
+## 📞 Ready to Supercharge Your Business?
 [⚠️ What are your paint points? Talk to An AIT System Architect⚠️](https://calendly.com/saas-me-up/30min)
 
 ## 💼 Our AI Services
-
 - 🧠 AI & Machine Learning Integration
 - 🖥️ Custom Software Development
 - 📱 Mobile App Creation
