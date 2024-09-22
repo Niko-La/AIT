@@ -11,7 +11,7 @@ We're not just another software dev shop. Nikola A.I.T is your on-call team of e
 - 💸 Boost Revenue Effortlessly
 
 🚀 **Save Big!** Typical AI + IT teams cost over **$750,000** per year.  
-### [💼 Try Us – Pay-As-You-Go. RISK FREE!](https://calendly.com/saas-me-up/30min)
+### [Try Us – Pay-As-You-Go. RISK FREE!](https://calendly.com/saas-me-up/30min)
 
 ✨ **Boost performance, cut costs.** Make the smart choice today!
 
