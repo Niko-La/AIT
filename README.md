@@ -1,9 +1,9 @@
-## 🚀 Nikola A.I.T Team  Your Artificial Intelligent I.T. Partner
-> "Imagine your own elite IT department at your fingertips, without the overhead. That's what we deliver."
+## 🚀 Nikola A.I.T Team: Your Artificial Intelligent I.T. Partner
+> "Imagine your own elite IT department at your fingertips, without the overhead."
 
 ## 🎯 Our Mission
 
-We're not just another software development company or IT provider. We're your dedicated AI-powered IT team, comprised of hardcore engineers, lean developers, and cutting-edge ML researchers.
+Not just another software development company or IT provider. We're your dedicated AI-powered IT team, comprised of hardcore engineers, expert devs & cutting-edge ML researchers.
 
 ### 💡 What Sets Us Apart
 
@@ -13,17 +13,24 @@ We're not just another software development company or IT provider. We're your d
 - 💰 Cost Reduction Strategies
 - 📈 Revenue Enhancement
 
+🚀 **Unlock Massive Savings!** Traditional AI + IT teams cost **$750,000+** annually insetad get one on **Pay as you go** Plan
+
+✨ **Boost performance, cut costs.** Make the smart choice today!
+
+### [👉 Up to 20% referral cash-back by sharing your new AI tools](https://calendly.com/saas-me-up/30min)
+
 ## 📈 Success Stories
 
-> "Enerva's A.I.T. Team created an interactive dashboard that enhanced our consulting reports and presentations. The interactive map allowed us to better target clients for new business, while custom AI tools saved us **30%** in time and improved employee productivity by **50%**. Their seamless integration was truly magical."
+> Our A.I.T. Team build software to better target new, while internal AI tools saved us **30%** in time and improved employee productivity by **50%**. Integration was truly magical."
 >
 > — Alex Johnson, Data Science Lead, Enerva
 
-**Key Metrics:** **Time Savings:** 30% | **Productivity Improvement:** 50%
+**Time Savings:** 30% | **Productivity Improvement:** 50%
 
-[Schedule a call with your AIT Team Lead](https://calendly.com/saas-me-up/30min)
+[👉 Schedule a call with our AIT Team Lead](https://calendly.com/saas-me-up/30min)
 
-### 🚀 **Up to 2x your profits by investing just 10% more in smart IT solutions.**
+
+### 🚀 ** 2x your profits by investing just 10% more in smart IT Team.**
 
 ## 🔬 Industries We Serve
 
@@ -47,8 +54,7 @@ Revolutionizing business with:
 
 Take the first step towards a more efficient, profitable future. Schedule a free consultation with our AI experts today!
 
-## 📞 Ready to Supercharge Your Business?
-[⚠️ What are your paint points? Talk to An AIT System Architect⚠️](https://calendly.com/saas-me-up/30min)
+[👉 What are your pain points? Talk to An AIT System Architect 👈](https://calendly.com/saas-me-up/30min)
 
 ## 💼 Our AI Services
 - 🧠 AI & Machine Learning Integration
@@ -162,6 +168,8 @@ We value close relationships and streamlined processes. Our Friends and Family p
 2. **Affordable Commitment**: Just $99/month minimum ensures you have dedicated support.
 3. **Branding Opportunity**: Promote having your own IT team, enhancing your company's tech credibility.
 
+## 📞 Ready to Supercharge Your Business?
+[🤔 Friends & Family start at $99🧐](https://calendly.com/saas-me-up/30min)
 ## 📈 Success Stories
 
 > "The Nikola A.I.T Team transformed our university lab by developing an online platform to track students' lab work. This innovation has led to improved engagement and easier monitoring of student progress throughout the year. I particularly appreciated the visualization dashboard, which helped students stay informed about upcoming tasks and fostered friendly competition among them."
