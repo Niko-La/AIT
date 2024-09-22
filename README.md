@@ -1,7 +1,7 @@
-## 🚀 Nikola A.I.T Team: Your Elite AI-Driven IT Partner  
+#### 🚀 Nikola A.I.T Team: Your AI-Driven IT Partner  
 > "Elite IT solutions, zero overhead."
 
-## 🎯 Our Mission  
+## 🎯 Why we Exists        
 We're not just another software dev shop. Nikola A.I.T is your on-call team of engineers, developers, and AI experts.
 
 ### 💡 Why Choose Us
