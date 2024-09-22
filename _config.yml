@@ -1,3 +1,4 @@
-markdown: GFM
-kramdown:
-  parse_block_html: true
+name: true
+#markdown: GFM
+#kramdown:
+#  parse_block_html: true

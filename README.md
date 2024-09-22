@@ -3,7 +3,7 @@
 
 ## 🎯 Our Mission
 
-Not just another software development company or IT provider. We're your dedicated AI-powered IT team, comprised of hardcore engineers, expert devs & cutting-edge ML researchers.
+Not just another software dev company or IT provider. We're your dedicated AI-powered IT team, comprised of hardcore engineers, expert devs & cutting-edge ML researchers.
 
 ### 💡 What Sets Us Apart
 
