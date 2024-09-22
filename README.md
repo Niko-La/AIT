@@ -1,7 +1,7 @@
-#### 🚀 Nikola A.I.T Team: Your AI-Driven IT Partner  
+## 🚀 Nikola A.I.T Team: Your AI-Driven IT Partner  
 > "Elite IT solutions, zero overhead."
 
-## 🎯 Why we Exists        
+## 🎯 Why We Exists        
 We're not just another software dev shop. Nikola A.I.T is your on-call team of engineers, developers, and AI experts.
 
 ### 💡 Why Choose Us
@@ -15,7 +15,7 @@ We're not just another software dev shop. Nikola A.I.T is your on-call team of e
 
 ✨ **Boost performance, cut costs.** Make the smart choice today!
 
-### [👉 Earn 20% referral rewards by sharing your new AI tools](https://calendly.com/saas-me-up/30min)
+### [👉 Refer & Earn 20% for Sharing Wins](https://calendly.com/saas-me-up/30min)
 
 ## 📈 Success Stories
 
