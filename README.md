@@ -3,17 +3,18 @@
 
 ## 🎯 Our Mission
 
-Not just another software dev company or IT provider. We're your dedicated AI-powered IT team, comprised of hardcore engineers, expert devs & cutting-edge ML researchers.
+Not just another software dev company or IT provider. We're your dedicated AI-powered IT team of hardcore engineers, expert devs &  ML datascientist.
 
 ### 💡 What Sets Us Apart
 
-- 🤖 AI-Driven Solutions
-- 💻 Custom Software Development
-- 📊 Data-Driven Process Optimization
-- 💰 Cost Reduction Strategies
-- 📈 Revenue Enhancement
+- 🤖💻⚙️🛠️ AI-Driven Software Development  
+- 📊📉📈 Data-Driven Process Optimization  
+- 💰💡 Cost Reduction Strategies  
+- 💸 Revenue Enhancement
 
-🚀 **Unlock Massive Savings!** Traditional AI + IT teams cost **$750,000+** annually insetad get one on **Pay as you go** Plan
+
+🚀 **Unlock Massive Savings!** Traditional AI + IT teams cost **$750,000+** annually 
+### [💼🚀 Try a Pay-As-You-Go Team – 100% RISK FREE!](https://calendly.com/saas-me-up/30min)
 
 ✨ **Boost performance, cut costs.** Make the smart choice today!
 
