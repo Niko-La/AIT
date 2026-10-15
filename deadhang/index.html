@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dead Hang Timer</title>
+<meta name="description" content="Automatically times your dead hangs using your iPhone's camera or motion sensors.">
+<meta name="theme-color" content="#0c0f13">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Dead Hang">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0c0f13;
+    --card: #161b22;
+    --card-2: #1d242d;
+    --line: #2a323d;
+    --text: #f2f4f7;
+    --muted: #93a0b0;
+    --accent: #ff7a1a;
+    --accent-ink: #1a0d02;
+    --good: #34c759;
+    --warn: #ffcc00;
+    --bad: #ff453a;
+    --radius: 18px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text); }
+  body {
+    font: 16px/1.45 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 520px; margin: 0 auto; display: grid; gap: 14px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  header h1 { font-size: 22px; margin: 0; letter-spacing: -0.01em; }
+  header h1 span { color: var(--accent); }
+  .pill { font-size: 13px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; }
+
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+
+  /* Stage: timer, camera preview */
+  #stage { position: relative; overflow: hidden; padding: 0; min-height: 260px; display: grid; }
+  #stage.camera { aspect-ratio: 3 / 4; max-height: 70vh; }
+  #video, #overlay { position: absolute; inset: 0; width: 100%; height: 100%; }
+  #video { object-fit: cover; background: #000; }
+  #video.mirror, #overlay.mirror { transform: scaleX(-1); }
+  .readout { position: relative; z-index: 1; align-self: end; padding: 22px 18px 18px; text-align: center; }
+  #stage.camera .readout { background: linear-gradient(transparent, rgba(0,0,0,.75) 45%); }
+  #state { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  #state::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: currentColor; }
+  #state[data-kind="hanging"] { color: var(--good); }
+  #state[data-kind="hanging"]::before { animation: pulse 1s infinite; }
+  #state[data-kind="waiting"] { color: var(--accent); }
+  #state[data-kind="error"] { color: var(--bad); }
+  @keyframes pulse { 50% { opacity: .25; } }
+  #clock { font-size: clamp(72px, 24vw, 128px); font-weight: 700; line-height: 1; margin: 10px 0 8px; font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
+  #clock.live { color: var(--good); }
+  #sub { color: var(--muted); min-height: 1.45em; margin: 0; }
+  #sub.error { color: var(--bad); }
+  #live { margin-top: 8px; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; min-height: 1.2em; }
+  #best-badge { display: inline-block; margin-left: 6px; background: var(--accent); color: var(--accent-ink); font-size: 12px; font-weight: 700; border-radius: 6px; padding: 1px 6px; vertical-align: 3px; }
+  #flip { position: absolute; z-index: 2; top: 12px; right: 12px; border: 0; border-radius: 999px; padding: 8px 12px; background: rgba(0,0,0,.55); color: #fff; font: inherit; font-size: 14px; }
+
+  /* Mode picker */
+  #modes { display: grid; gap: 8px; border: 0; padding: 0; margin: 0; }
+  #modes legend { font-size: 13px; color: var(--muted); margin-bottom: 6px; padding: 0; }
+  .mode { display: grid; grid-template-columns: 36px 1fr; gap: 2px 12px; align-items: center; padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); cursor: pointer; }
+  .mode input { position: absolute; opacity: 0; pointer-events: none; }
+  .mode svg { grid-row: span 2; width: 32px; height: 32px; color: var(--muted); }
+  .mode b { font-weight: 600; }
+  .mode small { color: var(--muted); font-size: 13px; line-height: 1.35; }
+  .mode:has(input:checked) { border-color: var(--accent); background: var(--card-2); }
+  .mode:has(input:checked) svg { color: var(--accent); }
+  .mode:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Buttons */
+  button { font: inherit; }
+  .primary, .hold { width: 100%; border: 0; border-radius: 16px; padding: 18px; font-size: 19px; font-weight: 700; cursor: pointer; }
+  .primary { background: var(--accent); color: var(--accent-ink); }
+  .primary:active { filter: brightness(.9); }
+  .hold { position: relative; overflow: hidden; background: var(--card-2); color: var(--text); border: 1px solid var(--line); user-select: none; -webkit-user-select: none; touch-action: none; }
+  .hold span { position: relative; }
+  .hold::before { content: ""; position: absolute; inset: 0; background: var(--bad); transform: scaleX(0); transform-origin: left; }
+  .hold.pressing::before { transform: scaleX(1); transition: transform .8s linear; }
+  .link { background: none; border: 0; color: var(--accent); padding: 4px 0; cursor: pointer; font-size: 14px; }
+
+  /* Stats + history */
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px; }
+  .stat b { display: block; font-size: 24px; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+  h2 { font-size: 15px; margin: 0 0 8px; color: var(--muted); font-weight: 600; }
+  #history-list { list-style: none; margin: 0; padding: 0; }
+  #history-list li { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); }
+  #history-list li:first-child { border-top: 0; }
+  #history-list .when { color: var(--muted); font-size: 14px; }
+  #history-list .dur { font-weight: 700; font-variant-numeric: tabular-nums; }
+  #history-list .del { border: 0; background: none; color: var(--muted); font-size: 20px; line-height: 1; padding: 4px 6px; cursor: pointer; }
+  .empty { color: var(--muted); margin: 0; }
+  .row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+
+  /* Settings + help */
+  details summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::after { content: "+"; color: var(--muted); }
+  details[open] summary::after { content: "−"; }
+  .setting { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); }
+  .setting:first-of-type { margin-top: 10px; }
+  .setting input[type="checkbox"] { width: 22px; height: 22px; accent-color: var(--accent); }
+  .setting select { font: inherit; background: var(--card-2); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 4px 8px; }
+  .help { color: var(--muted); font-size: 15px; }
+  .help h3 { color: var(--text); font-size: 15px; margin: 16px 0 4px; }
+  .help p, .help ul { margin: 4px 0; }
+  .help ul { padding-left: 20px; }
+  .help a { color: var(--accent); }
+  #install-tip { font-size: 14px; color: var(--muted); }
+
+  [hidden] { display: none !important; }
+  body.running .idle-only { display: none !important; }
+  body.running #history-list .del { visibility: hidden; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Dead <span>Hang</span></h1>
+    <span class="pill" id="mode-pill">Camera</span>
+  </header>
+
+  <section id="stage" class="card" aria-live="polite">
+    <video id="video" playsinline muted hidden></video>
+    <canvas id="overlay" hidden></canvas>
+    <button id="flip" type="button" hidden>Flip camera</button>
+    <div class="readout">
+      <div id="state" data-kind="idle">Ready</div>
+      <div id="clock">0.0s</div>
+      <p id="sub">Choose how your phone will watch you, then tap Start.</p>
+      <div id="live"></div>
+    </div>
+  </section>
+
+  <fieldset id="modes" class="idle-only">
+    <legend>Where's your phone?</legend>
+    <label class="mode">
+      <input type="radio" name="mode" value="camera">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+      <b>Propped up, camera on me</b>
+      <small>Most accurate. Lean it so it sees you from the waist up, with the timer facing you.</small>
+    </label>
+    <label class="mode">
+      <input type="radio" name="mode" value="pocket">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14v8a7 7 0 0 1-14 0z"/><rect x="9.5" y="2" width="5" height="9" rx="1"/></svg>
+      <b>In my pocket</b>
+      <small>Feels your jump onto the bar and your drop off it. You hear the time when you land.</small>
+    </label>
+    <label class="mode">
+      <input type="radio" name="mode" value="arm">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21V9l-3-6M16 21V9l3-6"/><rect x="5.5" y="11" width="5" height="7" rx="1"/></svg>
+      <b>In an armband</b>
+      <small>Strapped to your arm. Times how long your arm stays overhead. Very reliable.</small>
+    </label>
+  </fieldset>
+
+  <button id="start" class="primary" type="button">Start</button>
+  <button id="stop" class="hold" type="button" hidden><span>Hold to stop</span></button>
+
+  <section class="stats" aria-label="Stats">
+    <div class="stat"><span>Best</span><b id="stat-best">–</b></div>
+    <div class="stat"><span>Today</span><b id="stat-today">–</b></div>
+    <div class="stat"><span>Hangs</span><b id="stat-count">0</b></div>
+  </section>
+
+  <section class="card">
+    <div class="row"><h2>History</h2><button class="link idle-only" id="export" type="button" hidden>Export CSV</button></div>
+    <ul id="history-list"></ul>
+    <p class="empty" id="history-empty">No hangs yet.</p>
+  </section>
+
+  <details class="card idle-only" id="settings">
+    <summary>Settings</summary>
+    <label class="setting">Speak results <input type="checkbox" id="set-voice"></label>
+    <label class="setting">Call out every 10 s <input type="checkbox" id="set-callouts"></label>
+    <label class="setting">Beeps <input type="checkbox" id="set-beeps"></label>
+    <label class="setting">Ignore hangs shorter than
+      <select id="set-min">
+        <option value="2">2 s</option>
+        <option value="3">3 s</option>
+        <option value="5">5 s</option>
+        <option value="10">10 s</option>
+      </select>
+    </label>
+  </details>
+
+  <details class="card idle-only">
+    <summary>How it works</summary>
+    <div class="help">
+      <h3>Camera</h3>
+      <p>Pose detection runs on your phone; the video never leaves it. A hang starts when both elbows are above your shoulders and ends when your arms come down. If the bar is high, it's fine if your hands are out of frame.</p>
+      <h3>Pocket</h3>
+      <p>Standing and hanging feel the same to a phone in your pocket, so this mode times you from the moment you catch the bar to the moment you let go. Letting go is free fall with no push first, which you can't do from standing.</p>
+      <ul>
+        <li><b>Jump</b> up to the bar for the most accurate start.</li>
+        <li>Your feet must leave the ground. Just letting go and dropping a few inches is enough.</li>
+        <li>If you reach up without jumping, the hang counts from when you stopped moving.</li>
+      </ul>
+      <h3>Armband</h3>
+      <p>When you tap Start, let that arm hang relaxed for 3 seconds while it calibrates. Any time the arm is raised overhead (rotated more than 120°) counts as hanging.</p>
+      <h3>Tips</h3>
+      <ul>
+        <li>The screen stays on while a session runs. If you lock the phone, timing pauses.</li>
+        <li>Switch off silent mode to hear beeps and spoken times.</li>
+        <li>Add to Home Screen (Share → Add to Home Screen) to open it like an app. It works offline after the first visit.</li>
+      </ul>
+      <h3>Apple Watch</h3>
+      <p>Websites can't run on Apple Watch, so there's a small native watch app in this repo's <a href="https://github.com/Niko-La/AIT/tree/main/deadhang/watch">deadhang/watch</a> folder. It times hangs from your wrist position, and you install it with Xcode.</p>
+    </div>
+  </details>
+
+  <p id="install-tip" class="idle-only" hidden>Tip: tap Share → <b>Add to Home Screen</b> to use this like an app.</p>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>

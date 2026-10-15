@@ -1,0 +1,32 @@
+# XcodeGen spec. On a Mac: `brew install xcodegen && xcodegen`, then open DeadHang.xcodeproj.
+name: DeadHang
+options:
+  bundleIdPrefix: la.niko
+  deploymentTarget:
+    watchOS: "10.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+targets:
+  DeadHang:
+    type: application
+    platform: watchOS
+    sources:
+      - path: DeadHang
+    info:
+      path: DeadHang/Info.plist
+      properties:
+        CFBundleDisplayName: Dead Hang
+        WKApplication: true
+        WKWatchOnly: true
+        # Physical-therapy extended runtime session: keeps motion updates
+        # running while your wrist is up on the bar and the screen is off.
+        WKBackgroundModes: [physical-therapy]
+        NSMotionUsageDescription: Dead Hang reads your watch's motion to tell when your arms are up on the bar.
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: la.niko.deadhang.watchkitapp
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
